@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<Reporting_PACS>
+  <Patient>
+    <PatientID>11168952</PatientID>
+    <FirstName>TR&#x1ECC;NG</FirstName>
+    <LastName>B&#xD9;I V&#x102;N </LastName>
+    <BirthDate>19660101</BirthDate>
+    <Sex>M</Sex>
+  </Patient>
+  <ORDER>
+    <CreateSchedule>
+      <OrderNumber>12360</OrderNumber>
+      <AccessionNumber>526890</AccessionNumber>
+      <Exam_Code>12360</Exam_Code>
+      <Exam_Name>Ch&#x1EE5;p Xquang c&#x1ED9;t s&#x1ED1;ng ng&#x1EF1;c th&#x1EB3;ng nghi&#xEA;ng ho&#x1EB7;c ch&#x1EBF;ch [s&#x1ED1; h&#xF3;a 2 phim]</Exam_Name>
+      <ScheduleDate>20180924</ScheduleDate>
+      <OrderingDoctorID>8888</OrderingDoctorID>
+      <OrderingDoctorName>Nguy&#x1EC5;n M&#x1EA1;nh H&#xF9;ng</OrderingDoctorName>
+      <OrderingDept>Ch&#x1EA5;n th&#x1B0;&#x1A1;ng - Ch&#x1EC9;nh H&#xEC;nh</OrderingDept>
+      <Reason>G&#xE3;y x&#x1B0;&#x1A1;ng c&#x1EB3;ng ch&#xE2;n tr&#xE1;i; </Reason>
+      <OrderStatus>NW</OrderStatus>
+    </CreateSchedule>
+    <PatientVisit>
+      <VisitNumber/>
+      <Exam_Dept/>
+      <Exam_Room/>
+      <Admit_DateTime/>
+      <Pregnant/>
+    </PatientVisit>
+  </ORDER>
+  <StatusUpdate>
+    <SendingFacility/>
+    <MessageType/>
+    <MessageControl_ID/>
+    <StudyStatus>10</StudyStatus>
+  </StatusUpdate>
+  <Result_Ketqua>
+    <Description_Mota>- C&#x1ED9;t s&#x1ED1;ng ng&#x1EF1;cc&#xF3; &#x111;&#x1B0;&#x1EDD;ng cong sinh l&#xFD; b&#xEC;nh th&#x1B0;&#x1EDD;ng
+- Th&#xE2;n c&#xE1;c &#x111;&#x1ED1;t s&#x1ED1;ng  c&#xF3; chi&#x1EC1;u cao v&#xE0; &#x111;&#x1EAD;m &#x111;&#x1ED9; c&#x1EA3;n quang &#x111;&#x1ED3;ng &#x111;&#x1EC1;u. Kh&#xF4;ng th&#x1EA5;y l&#xFA;n x&#x1EB9;p, tr&#x1B0;&#x1EE3;t th&#xE2;n &#x111;&#x1ED1;t s&#x1ED1;ng.
+- Cung sau v&#xE0; c&#xE1;c cu&#x1ED1;ng s&#x1ED1;ng kh&#xF4;ng th&#x1EA5;y ti&#xEA;u h&#x1EE7;y
+- M&#x1ECF;m ngang, m&#x1ECF;m gai c&#xE1;c &#x111;&#x1ED1;t s&#x1ED1;ng kh&#xF4;ng th&#x1EA5;y b&#x1EA5;t th&#x1B0;&#x1EDD;ng.
+- Kh&#xF4;ng th&#x1EA5;y h&#xEC;nh gai x&#x1B0;&#x1A1;ng, c&#x1EA7;u x&#x1B0;&#x1A1;ng.
+- Khe &#x111;&#x129;a &#x111;&#x1EC7;m c&#xE1;c &#x111;&#x1ED1;t s&#x1ED1;ng c&#xF3; chi&#x1EC1;u cao &#x111;&#x1ED3;ng &#x111;&#x1EC1;u, kh&#xF4;ng th&#x1EA5;y h&#x1EB9;p khu tr&#xFA; khe &#x111;&#x129;a &#x111;&#x1EC7;m.
+- Ph&#x1EA7;n m&#x1EC1;m quanh c&#x1ED9;t s&#x1ED1;ng kh&#xF4;ng th&#x1EA5;y b&#x1EA5;t th&#x1B0;&#x1EDD;ng.
+- Ti&#x1EBF;n trest 
+- L&#x1B0;&#x1A1;ng 
+
+</Description_Mota>
+    <Conclusion_Ketluan>Hi&#x1EC7;n t&#x1EA1;i kh&#xF4;ng th&#x1EA5;y b&#x1EA5;t th&#x1B0;&#x1EDD;ng tr&#xEA;n ch&#x1EE5;p XQ c&#x1ED9;t s&#x1ED1;ng ng&#x1EF1;c.</Conclusion_Ketluan>
+  </Result_Ketqua>
+  <Radiologist_Bacsidoc>Demo</Radiologist_Bacsidoc>
+  <Radiologist_id>1</Radiologist_id>
+</Reporting_PACS>

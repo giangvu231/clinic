@@ -1,0 +1,166 @@
+
+<!-- Mixins--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Themes</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content="The description"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, shrink-to-fit=no, user-scalable=no"/>
+    <meta name="keywords" content="coding, html, css"/>
+    <meta name="author" content="someone"/>
+    <!-- Styles-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.css"/>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet"/>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header id="header"></header>
+      <!--#header-->
+      <section class="reporting" id="reporting">
+        <div class="container">
+          <div class="reporting__wrap">
+            <div class="edit-header">
+              <div class="edit-header__wrap">
+                <div class="edit-header__wrap--header">
+                  <div class="topbar">
+                    <div class="time fleft"> <span class="fleft">Today,&nbsp;</span>
+                      <p class="td fleft"></p>
+                    </div>
+                    <div class="welcome fright">
+                      <p>Welcome <span>Anna</span></p>
+                      <div class="popup">
+                        <ul>
+                          <li><a href="#">Change Password</a></li>
+                          <li><a href="#">Logout</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="clear-fix"></div>
+                  </div>
+                  <div class="contentbar">
+                    <div class="col33">
+                      <div class="edit-service">
+                        <div class="edit-service__content">
+                          <div class="edit-service__content--input"><span class="fleft span-title">chọn loại dịch vụ:</span>
+                            <select class="enter fleft" name="image">
+                              <option value="chup-cl">chụp cắt lớp</option>
+                              <option value="sieuam">siêu âm ổ bụng</option>
+                              <option value="chup-cht">chụp cổng hưởng từ</option>
+                            </select>
+                            <div class="clear-fix"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col33">
+                      <div class="edit-status">
+                        <div class="edit-status__content">
+                          <div class="input"><span>status:</span>
+                            <select class="d-enter">
+                              <option value="hide" disabled="disabled" selected="selected">Chọn trạng thái</option>
+                              <option value="dangdoc">Đang đọc</option>
+                              <option value="daxong">Đã đọc</option>
+                              <option value="status">Status                  </option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col33">
+                      <div class="edit-extend"><a class="tg" href="#">Thu gọn</a><a class="mr" href="#">Mở rộng                        </a></div>
+                    </div>
+                    <div class="clear-fix"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section class="table__infor" id="table__infor">
+              <div class="reporting--margin">
+                <!--change table infor-->
+                <div class="reporting__wrap--infor">
+                  <table>
+                    <tr>
+                      <td>
+                        <p><span>Mã BN: </span><span>19000000</span></p>
+                      </td>
+                      <td>
+                        <p><span>Tên BN: </span><span>AbcXyz</span></p>
+                      </td>
+                      <td>
+                        <p><span>Giới tính: </span><span>Nam</span></p>
+                      </td>
+                      <td>
+                        <p><span>Ngày sinh: </span><span>20/10/2003</span></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><span>BS khám : </span><span>Phạm Thị Thu Hạnh</span></p>
+                      </td>
+                      <td>
+                        <p><span>ID: </span><span>144546dc</span></p>
+                      </td>
+                      <td></td>
+                      <td>
+                        <p><span>Khoa : </span><span>NỘI NHI TỔNG HỢP (C4)</span></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><span>Lý do khám : </span><span>VIÊM LOÉT HỒNG CẤP</span></p>
+                      </td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <p><span>Ngày khám : </span><span>16:04   27/09/2003</span></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">
+                        <p><span>Tên chỉ định : </span><span>2882 - Siêu âm ổ bụng ( gan mật , tụy , lách , thận, bàng quang)</span></p>
+                      </td>
+                      <td>
+                        <p><span>AccNo :</span><span>00002533189981</span></p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </section>
+            <article class="reporting__wrap--content">
+              <p>Gan-Mật</p>
+              <blockquote><span>Gan: Không to, nhu mô đều, không thấy khối khu trú.</span><br/><span>Tĩnh mạch cửa :  không giãn , không có huyết khối.</span><br/><span>Đường mật : Trong và ngoài gan không giãn, không có sỏi.</span><br/><span>Túi mật : thành mỏng, dịch mật trong , không có sỏi.  </span></blockquote>
+              <p>Tụy lách</p>
+              <blockquote><span>Tụy : kích thước bình thường, nhu mô đều , ống tụy không giãn , quanh tụy không thấy bất thường.</span><br/><span>Lách : kích thước không to nhu mô đều.</span></blockquote>
+              <p>Hệ tiết niệu</p>
+              <blockquote><span>Thận phải :  kích thước bình thường, nhu mô dày và đều bình thường . Đài bể thận không giãn , Không có sỏi . Niệu quản không giãn </span><br/><span>Thận trái :  kích thước bình thường, nhu mô dày và đều bình thường . Đài bể thận không giãn , Không có sỏi . Niệu quản không giãn .</span><br/><span>Bàng quang : thành nhẵn , nước tiểu trong , không có sỏi.</span></blockquote>
+              <p>Khác</p>
+              <blockquote><span>Không có dịch tự do ổ bụng</span></blockquote>
+              <p>Kết luận:</p>
+              <p class="last">Hiện tại không thấy hình ảnh bất thường trên siêu âm ổ bụng .</p><a href="#">HIS Repost</a>
+            </article>
+            <div class="reporting__wrap--button">
+              <button><a href="#"><i class="fas fa-cog"></i><span>Sửa kết quả</span></a></button>
+              <button><a href="#"><span>Lưu kết quả</span></a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer"></footer>
+      <!--#footer-->
+    </div>
+    <!--#wrapper-->
+    <!--JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.8.5/js/standalone/selectize.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,868 @@
+/*basic*/
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.container-fluid {
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul.list-inline {
+    margin: 0;
+    padding: 0;
+}
+
+ul.list-inline>li {
+    list-style: none;
+    display: inline-block;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.col-sm-4 {
+    width: 33.33%;
+    float: left;
+}
+
+.col-sm-6 {
+    width: 50%;
+    float: left;
+}
+
+.col-sm-3 {
+    width: 25%;
+    float: left;
+}
+
+.col-sm-9 {
+    width: 75%;
+    float: left;
+}
+
+.col-sm-2 {
+    width: 16.66%;
+    float: left;
+}
+
+.col-sm-8 {
+    width: 66.66%;
+    float: left;
+}
+
+.row-col {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.fleft,
+.float-left {
+    float: left;
+}
+
+.fright,
+.float-right {
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.text-up {
+    text-transform: uppercase;
+}
+
+/*Custom*/
+
+body {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666666;
+    background-color: #fff;
+}
+
+/* custom */
+
+/* Page Login */
+
+.login {
+    position: relative;
+}
+
+.bg-login {
+    background-image: url('../images/images/dangnhap_02.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.login--form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 370px;
+    transform: translate(-55%, -50%);
+}
+
+h2.login--title {
+    font-size: 42px;
+    color: #0c81e5;
+    margin-bottom: 40px;
+}
+
+.login--form__input input {
+    display: block;
+    width: calc(100% - 84px);
+    padding: 20px;
+    border: none;
+    margin-bottom: 25px;
+    background-color: #efefef;
+    outline: none;
+    padding-left: 65px;
+}
+
+.login--input {
+    position: relative;
+}
+
+.login--input svg {
+    position: absolute;
+    top: 20px;
+    color: #000;
+    left: 35px;
+}
+
+.login--input svg.fa-eye {
+    right: 25px;
+    padding: 10px;
+    cursor: pointer;
+    top: 10px;
+    display: inline-block;
+    left: auto;
+}
+
+.btn__signin button {
+    width: 100%;
+    border: 1px solid transparent;
+    display: inline-block;
+    text-transform: uppercase;
+    outline: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #7392e2;
+    color: #fff;
+    font-weight: 600;
+}
+
+.login--choose {
+    margin-bottom: 20px;
+}
+
+.login--choose select {
+    background: #efefef;
+    width: 100%;
+    outline: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+.technicians--show {
+    display: none;
+}
+
+.technicians--show.active {
+    display: block;
+}
+
+/* Page Login */
+
+/* index */
+
+body.active {
+    overflow: hidden;
+}
+
+#home {
+    position: relative;
+}
+
+#popup.active {
+    display: block;
+}
+
+#popup {
+    position: absolute;
+    top: 0;
+    padding-top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.bg-popup {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.5;
+    z-index: 1001;
+}
+
+header .container .header-top {
+    background: #0d83b3;
+    color: #fff;
+}
+
+header .container .header-mid {
+    background: #53b9fd;
+    color: #fff;
+}
+
+header .container .header-top {
+    margin-bottom: 15px;
+}
+
+.header-top .account--menu1 {
+    position: relative;
+}
+
+.header-top .account--menu1 .account--menu2 {
+    position: absolute;
+    width: 150px;
+    text-align: left;
+    background: #fff;
+    color: #000;
+    right: 0;
+    top: 80%;
+    border-radius: 3px;
+    border: 1px solid #53b9fd;
+    border-top: none;
+    line-height: 40px;
+    display: none;
+    padding-left: 0;
+    z-index: 20;
+}
+
+.header-top .account--menu1 .account--menu2:before {
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: -9px;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.header-top .account--menu1 .account--menu2 li {
+    line-height: 50px;
+}
+
+.header-top .account--menu1 .account--menu2 li:hover a {
+    color: #53b9fd;
+}
+
+.header-top .date p {
+    padding: 15px 25px;
+    padding-left: 30px;
+    margin: 0;
+}
+
+.header-top .account {
+    padding-right: 20px;
+}
+
+.header-top .account li {
+    display: inline-block;
+    margin: 0;
+    line-height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header-top .account li p {
+    margin: 0;
+}
+
+header .container .header-mid {
+    margin-bottom: 15px;
+}
+
+.header--input input {
+    border: none;
+    padding: 18px 20px;
+    outline: none;
+    width: 240px;
+    margin: 20px 35px;
+}
+
+.header--input input::placeholder {
+    color: #cccccc;
+}
+
+nav.header--btn ul li {
+    line-height: 90px;
+}
+
+nav.header--btn ul li a {
+    line-height: 20px;
+    padding: 15px 25px;
+    display: inline-block;
+    margin-right: 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+}
+
+/* index */
+
+/* content */
+
+#content {
+    padding-bottom: 100px;
+}
+
+.content--table {
+    border: 1px solid #53b9fd;
+    border-top: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.content--table .content--table__header {
+    background-color: #53b9fd;
+    color: #fff;
+}
+
+ul.content--table__header {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    word-spacing: -4px;
+    font-size: 13px;
+}
+
+.content--table__header li {
+    border-right: 1px solid #3ba1f7;
+    text-align: center;
+    line-height: 25px;
+    word-spacing: 0px;
+    vertical-align: middle;
+}
+
+.content--table__header li p,
+.content--table__content li p {
+    margin: 0px;
+}
+
+.Name {
+    width: 12.4%;
+}
+
+.Seri {
+    width: 6.1%;
+}
+
+.card {
+    width: 11.43%;
+}
+
+.Date {
+    width: 9.54%;
+}
+
+.Time {
+    width: 9.54%;
+}
+
+.Number {
+    width: 11.24%;
+}
+
+.service {
+    width: 12.4%;
+}
+
+.content--table__content li.service p {
+    margin: 5px;
+}
+
+.Status {
+    width: 9.23%;
+}
+
+.Report {
+    width: 10.26%;
+}
+
+ul.content--table__content {
+    word-spacing: -4px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    border-top: 1px solid #fff;
+}
+
+.content--table__header li.Report {
+    border-right: none;
+}
+
+.content--table__content li {
+    position: relative;
+    z-index: 100;
+    word-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid transparent;
+}
+
+.content--table>.row:nth-child(2) .content--table__content {
+    background: #eddba1;
+}
+
+.content--table>.row:nth-child(3) .content--table__content {
+    background: #cee6fa;
+}
+
+.content--table>.row:nth-child(5) .content--table__content {
+    background: #cee6fa;
+}
+
+.content--table>.row:nth-child(7) .content--table__content {
+    background: #cee6fa;
+}
+
+.Status select {
+    outline: none;
+    padding: 5px 10px;
+}
+
+.content--table__content li.btn--edit {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.content--table__content li.btn--edit>ul>li>a {
+    padding: 5px 8px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 3px;
+    background: #53b9fd;
+    transition: all 0.5s;
+}
+
+.btn--edit__update {
+    display: none;
+}
+
+.content--table__content li.btn--edit.active button.btn--edit__edit {
+    display: none;
+}
+
+.content--table__content li.btn--edit.active button.btn--edit__update {
+    display: block;
+}
+
+.tab-page {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.tab-page ul li a {
+    padding: 5px 11px;
+    border-radius: 3px;
+    border: 1px solid #53b9fd;
+    display: inline-block;
+}
+
+.tab-page ul li input {
+    width: 30px;
+    outline: none;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #53b9fd;
+}
+
+.tab-page ul li a:hover {
+    color: #fff;
+    background: #53b9fd;
+}
+
+.modun-edit {
+    display: none;
+    background-color: #eeeeee;
+    margin: 5px;
+    position: relative;
+}
+
+.modun-edit::after {
+    content: "";
+    border-bottom: 15px solid #eeeeee;
+    border-left: 10px solid transparent;
+    position: absolute;
+    z-index: 1000;
+    top: -15px;
+    right: 13px;
+    border-right: 10px solid transparent;
+}
+
+.modun-edit h3 {
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 12px;
+}
+
+.modun-edit select.show-edit {
+    padding: 5px 15px;
+    margin: 20px 0;
+    margin-left: 12px;
+    outline: none;
+}
+
+.modun-edit .col-sm-2 button {
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #53b9fd;
+    color: #fff;
+    margin: 16px 5px;
+}
+
+.btn--edit li.next-drop {
+    position: relative;
+}
+
+.btn--edit li.next-drop .next-drop__menu2 {
+    position: absolute;
+    width: 150px;
+    z-index: 1000;
+    display: none;
+    list-style: none;
+    right: -3px;
+    top: 35px;
+    padding-left: 0px;
+    text-align: left;
+    border: 1px solid #717171;
+    background: #eeeeee;
+}
+
+.next-drop__menu2::after {
+    position: absolute;
+    top: -9px;
+    right: 10px;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #eeeeee;
+}
+
+.next-drop__menu2::before {
+    position: absolute;
+    top: -11px;
+    right: 9px;
+    content: "";
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #717171;
+}
+
+.btn--edit li.next-drop .next-drop__menu2 li a {
+    text-align: left;
+    line-height: 28px;
+    display: block;
+    transition: all 0.3s;
+    padding-left: 40px;
+}
+.btn--edit li.next-drop .next-drop__menu2 li a:hover{
+    background: #0d83b3;
+    color: #fff;
+}
+.next-drop__menu2 li:first-child {
+    border-bottom: 1px solid #717171;
+}
+
+/* content */
+
+.ui-widget-header .ui-icon {
+    background-image: url('images/images/ui-icons_444444_256x240.png');
+}
+
+#popup {
+    display: none;
+}
+
+#popup.active {
+    display: block;
+}
+
+.popup {
+    position: relative;
+    z-index: 1002;
+    max-width: 900px;
+    padding: 60px;
+    margin: 0 auto;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.popup p {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.popup input {
+    padding: 13px 20px;
+    width: 90%;
+    border-radius: 4px;
+    border: 1px solid #a8a8a8;
+    outline: none;
+}
+
+.popup .popup--title h2 {
+    font-size: 42px;
+    color: #0d83b3;
+    font-weight: 400;
+}
+
+.popup .col-sm-6 .inner {
+    padding: 0 15px;
+}
+
+.popup select {
+    padding: 12px 20px;
+    border: 1px solid #a8a8a8;
+    outline: none;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.popup .input-birth input {
+    width: 80%;
+}
+
+.popup .input-address textarea {
+    width: 100%;
+    font-family: 'OpenSans', sans-serif;
+}
+
+.popup .create a,.popup .create button {
+    font-size: 16px;
+    margin-top: 50px;
+    display: inline-block;
+    width: 400px;
+    padding: 25px 0;
+    background-color: #0d83b3;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.popup button.clear {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/* patient-status */
+
+.patient-status {
+    margin-bottom: 15px;
+}
+
+.patient-status header {
+    background-color: #53b9fd;
+    color: #fff;
+    padding: 15px;
+}
+
+.patient-status header p {
+    margin: 4px;
+}
+.patient-status > .container{
+    position: relative;
+}
+.patient-status .show-hide p {
+    display: none;
+    cursor: pointer;
+}
+
+.patient-status .show-hide p.active {
+    display: block
+}
+
+.patient-status select {
+    padding: 5px 10px;
+}
+
+/* patient-status */
+
+.patient-status section {
+    position: absolute;
+    width: calc(100% - 2px);
+    z-index: 10;
+    border: 1px solid #000;
+    background-color: #fff;
+    /* position: relative; */
+    display: none;
+}
+
+.patient-status section.active {
+    display: block;
+}
+
+.patient-status section::after {
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 17%;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.patient-status section::before {
+    position: absolute;
+    content: "";
+    top: -11px;
+    right: 17%;
+    border-bottom: 11px solid #000;
+    border-left: 12px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.patient-status section div[class*="col-sm"] .inner {
+    padding-left: 20px;
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+}
+
+/* edit-result */
+
+.edit-result #cke_editor1 {
+    height: 600px;
+}
+
+.edit-result__edit,
+.edit-result__show {
+    display: none;
+}
+
+.edit-result__edit.active,
+.edit-result__show.active {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.edit-result__save li a {
+    display: inline-block;
+    padding: 15px;
+    margin-left: 40px;
+    color: #fff;
+    background-color: #0d83b3;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+.edit-result__save li a svg{
+    margin-right: 10px;
+}
+.edit-result__edit .edit-result__act{
+    margin-top: 20px;
+}
+.edit-result__act button {
+    margin-left: 15px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0d83b3;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+}
+.edit-result{
+    padding-bottom: 100px;
+}
+#change-pass{
+    display: none;
+    background-color: #666666;
+    max-width: 576px;
+    padding: 75px 100px;
+}
+.change-pass{
+    padding: 45px 40px;
+    width: 100%;
+    background-color: #fff;
+}
+.change-pass input{
+    width: 290px;
+    padding: 15px 25px;
+    margin-top: 15px;
+}
+.change-pass button{
+    padding: 15px 50px;
+    background-color: #7392e2;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 15px;
+}
+#change-pass .fancybox-close-small svg{
+    color: #fff;
+}
+button{
+    cursor: pointer;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #00BD9C;
+    border-color: #00BD9C;
+}

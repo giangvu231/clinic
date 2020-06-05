@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Reporting_PACS>
+  <Patient>
+    <PatientID>11168952</PatientID>
+    <FirstName>TR&#x1ECC;NG</FirstName>
+    <LastName>B&#xD9;I V&#x102;N</LastName>
+    <BirthDate>11/11/1997</BirthDate>
+    <Sex>M</Sex>
+  </Patient>
+  <ORDER>
+    <CreateSchedule>
+      <OrderNumber>3038</OrderNumber>
+      <AccessionNumber>189136</AccessionNumber>
+      <Exam_Code>3038</Exam_Code>
+      <Exam_Name>Ch&#x1EE5;p Xquang c&#x1ED9;t s&#x1ED1;ng ng&#x1EF1;c th&#x1EB3;ng nghi&#xEA;ng ho&#x1EB7;c ch&#x1EBF;ch [s&#x1ED1; h&#xF3;a 2 phim]</Exam_Name>
+      <ScheduleDate>2018-09-24</ScheduleDate>
+      <OrderingDoctorID>8888</OrderingDoctorID>
+      <OrderingDoctorName>Nguy&#x1EC5;n M&#x1EA1;nh H&#xF9;ng</OrderingDoctorName>
+      <OrderingDept>Ch&#x1EA5;n th&#x1B0;&#x1A1;ng - Ch&#x1EC9;nh H&#xEC;nh</OrderingDept>
+      <Reason>G&#xE3;y x&#x1B0;&#x1A1;ng c&#x1EB3;ng ch&#xE2;n tr&#xE1;i</Reason>
+      <OrderStatus>0</OrderStatus>
+    </CreateSchedule>
+    <PatientVisit>
+      <VisitNumber/>
+      <Exam_Dept/>
+      <Exam_Room/>
+      <Admit_DateTime/>
+      <Pregnant/>
+    </PatientVisit>
+  </ORDER>
+  <StatusUpdate>
+    <SendingFacility/>
+    <MessageType/>
+    <MessageControl_ID/>
+    <OrderStatus/>
+  </StatusUpdate>
+  <Result_Ketqua>
+    <Description_Mota>&lt;ul&gt;&lt;li&gt; C&#x1ED9;t s&#x1ED1;ng ng&#x1EF1;cc&#xF3; &#x111;&#x1B0;&#x1EDD;ng cong sinh l&#xFD; b&#xEC;nh th&#x1B0;&#x1EDD;ng&lt;/li&gt;&lt;/br&gt;						&lt;li&gt;Th&#xE2;n c&#xE1;c &#x111;&#x1ED1;t s&#x1ED1;ng  c&#xF3; chi&#x1EC1;u cao v&#xE0; &#x111;&#x1EAD;m &#x111;&#x1ED9; c&#x1EA3;n quang &#x111;&#x1ED3;ng &#x111;&#x1EC1;u. Kh&#xF4;ng th&#x1EA5;y l&#xFA;n x&#x1EB9;p, tr&#x1B0;&#x1EE3;t th&#xE2;n &#x111;&#x1ED1;t s&#x1ED1;ng.&lt;/li&gt;&lt;/br&gt;						&lt;li&gt;Cung sau v&#xE0; c&#xE1;c cu&#x1ED1;ng s&#x1ED1;ng kh&#xF4;ng th&#x1EA5;y ti&#xEA;u h&#x1EE7;y&lt;/li&gt;&lt;/br&gt;						&lt;li&gt;M&#x1ECF;m ngang, m&#x1ECF;m gai c&#xE1;c &#x111;&#x1ED1;t s&#x1ED1;ng kh&#xF4;ng th&#x1EA5;y b&#x1EA5;t th&#x1B0;&#x1EDD;ng.&lt;/li&gt;&lt;/br&gt;						&lt;li&gt;Kh&#xF4;ng th&#x1EA5;y h&#xEC;nh gai x&#x1B0;&#x1A1;ng, c&#x1EA7;u x&#x1B0;&#x1A1;ng.&lt;/li&gt;&lt;/br&gt;						&lt;li&gt;Khe &#x111;&#x129;a &#x111;&#x1EC7;m c&#xE1;c &#x111;&#x1ED1;t s&#x1ED1;ng c&#xF3; chi&#x1EC1;u cao &#x111;&#x1ED3;ng &#x111;&#x1EC1;u, kh&#xF4;ng th&#x1EA5;y h&#x1EB9;p khu tr&#xFA; khe &#x111;&#x129;a &#x111;&#x1EC7;m.&lt;/li&gt;&lt;/br&gt;                        &lt;li&gt;Ph&#x1EA7;n m&#x1EC1;m quanh c&#x1ED9;t s&#x1ED1;ng kh&#xF4;ng th&#x1EA5;y b&#x1EA5;t th&#x1B0;&#x1EDD;ng.&lt;/li&gt;&lt;/br&gt;                        &lt;/ul&gt;</Description_Mota>
+    <Conclusion_Ketluan>Hi&#x1EC7;n t&#x1EA1;i kh&#xF4;ng th&#x1EA5;y b&#x1EA5;t th&#x1B0;&#x1EDD;ng tr&#xEA;n ch&#x1EE5;p XQ c&#x1ED9;t s&#x1ED1;ng ng&#x1EF1;c.</Conclusion_Ketluan>
+  </Result_Ketqua>
+  <Radiologist_Bacsidoc>B&#xF9;i &#x110;&#x103;ng T&#xF4;n</Radiologist_Bacsidoc>
+  <Radiologist_id>1</Radiologist_id>
+</Reporting_PACS>

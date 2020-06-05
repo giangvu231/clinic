@@ -1,0 +1,66 @@
+/*********************
+    - 2. General -
+*********************/
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.list-inline {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.list-inline li {
+  @include dis(middle);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  border: none;
+}
+
+
+.fleft,.float-left  {
+  float: left;
+}
+
+.fright, .float-right {
+  float: right;
+}
+
+.clear-fix,
+.clearfix {
+  clear: both;
+}
+.text-right{
+  text-align: right;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.content-wrapper{
+  padding: 14px 21px;
+  border: 1px solid #e1e1e1;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+.title-default  {
+  color: #444444;
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}

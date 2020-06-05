@@ -1,0 +1,1 @@
+"use strict";var Services=function(e){return{is:function(r){return 0!=e(r).length}}}(jQuery);

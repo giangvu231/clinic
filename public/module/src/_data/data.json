@@ -1,0 +1,70 @@
+{
+	"base": {
+		"title": "Themes",
+    "description": "The description",
+    "keywords": "coding, html, css",
+    "author": "someone"
+  },
+ 
+   "menu1":[
+    {
+      "text":"Trang chủ",
+      "links":"#"
+    },
+    {
+      "text":"Ưu đãi",
+      "links":"#"
+    },
+    {
+      "text":"Giới thiệu",
+      "links":"#"
+    },
+    {
+      "text":"Thực đơn chọn món",
+      "links":"#"
+    },
+    {
+      "text":"Set Menu",
+      "links":"#"
+    },
+    {
+      "text":"Ẩm thực Phương Nam",
+      "links":"#"
+    }
+  ],
+  "menu2":[
+    {
+      "text":"Đồ nướng",
+      "links":"#"
+    },
+    {
+      "text":"Đồ uống",
+      "links":"#"
+    },
+    {
+      "text":"Món nóng",
+      "links":"#"
+    },
+    {
+      "text":"Các món lẩu",
+      "links":"#"
+    },
+    {
+      "text":"Món ăn nhẹ",
+      "links":"#"
+    },
+    {
+      "text":"Món ngon nổi bật",
+      "links":"#"
+    },
+    {
+      "text":"Cuốn Phương Nam",
+      "links":"#"
+    },
+    {
+      "text":"Bánh Tráng Trảng Bàng",
+      "links":"#"
+    }
+  ]
+}
+

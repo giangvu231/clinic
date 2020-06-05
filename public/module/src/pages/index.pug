@@ -1,0 +1,66 @@
+extends _layouts/layout
+block content
+  section#edit-template2.edit-template2
+    .container
+      form(action="")
+        .edit-header
+          .edit-header__wrap
+            .edit-header__wrap--header
+              .topbar
+                .time.fleft 
+                  .tooltip-btn.fleft
+                    a.fleft
+                      .fas.fa-home
+                  span.fleft
+                  p.td.fleft
+                .welcome.fright
+                  p Welcome 
+                    span Anna
+                  .popup
+                    ul
+                      li
+                        a(href="#") Change Password
+                      li
+                        a(href="#") Logout
+                .clear-fix
+              .contentbar
+                .col33
+                  .edit-service
+                    .edit-service__content
+                      .edit-service__content--input
+                        span.fleft.span-title chọn template:
+                        select.enter.fleft(name="image")
+                          option(value="chup-cl") Chụp cắt lớp
+                          option(value="sieuam") Siêu âm ổ bụng
+                          option(value="chup-cht") Chụp cổng hưởng từ
+                        .clear-fix
+                .col50
+                  .edit-status
+                    .edit-status__content
+                      .input
+                        span Kỹ thuật:
+                        input(type="text", name="kythuat")                                        
+                .clear-fix
+        .edit-template__ckeditor
+          .reporting--margin
+            .edit-template__ckeditor2
+              textarea#summernote(name="", cols="30", rows="10")
+              .edit-template__result
+                .col10
+                  span Kết luận:
+                .col90
+                  textarea(name="", cols="30", rows="3")
+                .clear-fix
+              .reporting__wrap--button
+                button
+                  a(href="#")
+                    i.fas.fa-cog
+                    span &nbsp;&nbsp;Sửa kết quả
+                button
+                  a(href="#")
+                    i.fa.fa-floppy-o(aria-hidden="true")
+                    span &nbsp;&nbsp;Lưu kết quả
+                button
+                  a(href="#")
+                    i.fa.fa-print(aria-hidden="true")
+                    span &nbsp;&nbsp;In kết quả

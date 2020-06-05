@@ -1,0 +1,46 @@
+include ../_partials/mixins.pug
+<!DOCTYPE html>
+html(lang="en")
+  head
+      title=base.title
+      meta(charset="utf-8")
+      meta(name="description" content=base.description)
+      meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1, shrink-to-fit=no, user-scalable=no")
+      meta(name="keywords", content=base.keywords)
+      meta(name="author", content=base.author)
+      // Styles
+      link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous")
+      link(rel="stylesheet", href="libs/bootstrap-3/css/bootstrap-theme.min.css")
+      link(rel="stylesheet", href="libs/bootstrap-3/css/bootstrap.min.css")
+      link(rel="stylesheet" type="text/css" href="libs/owlCarousel/assets/owl.theme.default.min.css")
+      link(rel="stylesheet" type="text/css" href="libs/owlCarousel/assets/owl.carousel.min.css")
+      link(rel="stylesheet" type="text/css" href="libs/owlCarousel/assets/animate.css")
+      link(rel="stylesheet" type="text/css" href="libs/flexslider/flexslider.min.css")
+      link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+      link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous")
+      link(href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet")   
+      link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.css")   
+      link(href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+      block csslibs
+      link(rel="stylesheet" type="text/css" href="style.css")
+  body
+    #wrapper
+      //- include ../_partials/header.pug
+      block content
+      //- include ../_partials/footer.pug
+    //#wrapper
+
+    //JS
+    script(src="libs/jQuery/jquery.min.js")
+    script(src="libs/owlCarousel/owl.carousel.min.js")
+    script(src="libs/validate/additional-methods.min.js")
+    script(src="libs/validate/jquery.validate.min.js")
+    script(src="libs/flexslider/jquery.flexslider-min.js")
+    script(src="libs/elevatezoom/jquery.elevatezoom.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js")
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.8.5/js/standalone/selectize.min.js")
+    block scriptlibs
+    script(src="js/script.js")
+

@@ -1,0 +1,535 @@
+
+<!-- Mixins--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Themes</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content="The description"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, shrink-to-fit=no, user-scalable=no"/>
+    <meta name="keywords" content="coding, html, css"/>
+    <meta name="author" content="someone"/>
+    <!-- Styles-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.css"/>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet"/>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header id="header"></header>
+      <!--#header-->
+      <section class="test" id="test">
+        <div class="container">
+          <div class="test__wrap">
+            <div class="test__wrap--header">
+              <div class="topbar">
+                <div class="time fleft"> <span class="fleft">Today,&nbsp;</span>
+                  <p class="td fleft"></p>
+                  <div class="clear-fix"></div>
+                </div>
+                <div class="welcome fright">
+                  <p>Welcome <span>Anna</span></p>
+                  <div class="popup">
+                    <ul>
+                      <li><a href="#">Change Password</a></li>
+                      <li><a href="#">Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="change-language fright">
+                  <div class="language-active"><span><img src="images/vietnam-flag-icon-16.png" alt=""/> VI</span></div>
+                  <ul class="languagepicker">
+                    <li><a class="active" href="#vi"><img src="images/vietnam-flag-icon-16.png"/> VI</a></li>
+                    <li><a href="#en"><img src="http://i64.tinypic.com/fd60km.png"/> EN</a></li>
+                  </ul>
+                </div>
+                <div class="clear-fix"></div>
+              </div>
+              <form action="">
+                <div class="number-cart">
+                  <div class="search fleft">
+                    <input type="text" name="number-cart" placeholder="Nhập số phiếu"/>
+                    <div class="img-search"><a href="#"><img src="images/search.png" alt=""/></a></div>
+                  </div>
+                  <div class="create fleft">
+                    <button type="button" href="#create-new-order.html" data-fancybox="data-fancybox">Create new order</button>
+                  </div>
+                  <div class="clear-fix"></div>
+                </div>
+              </form>
+            </div>
+            <div class="test__wrap--content">
+              <table class="table1">
+                <thead>
+                  <tr>
+                    <th>Patient Name</th>
+                    <th>Patient ID</th>
+                    <th>Số Phiếu</th>
+                    <th>Requested Date</th>
+                    <th>Requested Time</th>
+                    <th>Accession Number</th>
+                    <th>Imaging Service</th>
+                    <th>Status</th>
+                    <th>Report owner</th>
+                    <th></th>
+                  </tr>
+                </thead>
+              </table>
+              <table class="table2">
+                <tbody style="border-radius: 12px;">
+                  <tr class="shadow bg">
+                    <td>Akram</td>
+                    <td>022</td>
+                    <td> </td>
+                    <td> 10/03/2018</td>
+                    <td> 2:30 PM</td>
+                    <td> 1234</td>
+                    <td>
+                       CT Chest<span>Abdomen Pelvis</span></td>
+                    <td>Schedule</td>
+                    <td></td>
+                    <td>
+                      <p><a class="btn-next fleft" href="javascript:void(0)"><i class="fas fa-forward"></i></a><a class="btn-dots fleft" href="javascript:void(0)"><i class="fas fa-ellipsis-h"></i></a>
+                        <div class="clear-fix"></div>
+                      </p>
+                      <!--Them myPopup-->
+                      <div class="myPopup popuptext">
+                        <ul>
+                          <li><a href="#">Đến phòng 1</a></li>
+                          <li><a href="#">Đến phòng 2</a></li>
+                        </ul>
+                      </div>
+                      <!--Them myPopup-->
+                    </td>
+                  </tr>
+                  <tr class="info">
+                    <td colspan="10">
+                      <div class="box">
+                        <form action="">
+                          <div class="row">
+                            <div class="col33 col fleft text-right">
+                              <select class="fleft d-enter" name="loai-dich-vu">
+                                <option value="chup-cat-lop">Chụp Cắt Lớp</option>
+                                <option value="sieu-am">siêu âm</option>
+                                <option value="chup-cong-huong">chụp Cộng hưởng từ</option>
+                              </select>
+                              <label class="fright">Chọn loại dịch vụ:</label>
+                              <div class="clear-fix"></div>
+                            </div>
+                            <div class="col22 col fleft">
+                              <select class="fright d-enter" name="phong">
+                                <option value="p1">phòng 1</option>
+                                <option value="p2">phòng 2</option>
+                                <option value="p3">phòng 3</option>
+                              </select>
+                              <label class="fright">Chọn phòng:</label>
+                              <div class="clear-fix"></div>
+                            </div>
+                            <div class="col22 col fleft">
+                              <select class="fright d-enter" name="status">
+                                <option value="Schedule">Schedule</option>
+                                <option value="arrival">arrival</option>
+                              </select>
+                              <label class="fright">status:</label>
+                              <div class="clear-fix"></div>
+                            </div>
+                            <div class="col22 col fleft">
+                              <div class="button">
+                                <button type="button">Lưu</button>
+                                <button type="button">Hủy</button>
+                                <div class="clear-fix">                  </div>
+                              </div>
+                            </div>
+                            <div class="clear-fix"></div>
+                          </div>
+                        </form>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="shadow bg">
+                    <td>Akram</td>
+                    <td>022</td>
+                    <td> </td>
+                    <td> 10/03/2018</td>
+                    <td> 2:30 PM</td>
+                    <td> 1234</td>
+                    <td>
+                       CT Chest<span>Abdomen Pelvis</span></td>
+                    <td>Schedule</td>
+                    <td></td>
+                    <td>
+                      <p><a class="btn-next fleft" href="javascript:void(0)"><i class="fas fa-forward"></i></a><a class="btn-dots fleft" href="javascript:void(0)"><i class="fas fa-ellipsis-h"></i></a>
+                        <div class="clear-fix"></div>
+                      </p>
+                      <!--Them myPopup-->
+                      <div class="myPopup popuptext">
+                        <ul>
+                          <li><a href="#">Đến phòng 1</a></li>
+                          <li><a href="#">Đến phòng 2</a></li>
+                        </ul>
+                      </div>
+                      <!--Them myPopup-->
+                    </td>
+                  </tr>
+                  <tr class="info">
+                    <td colspan="10">
+                      <div class="box">
+                        <form action="">
+                          <div class="row">
+                            <div class="col33 col fleft text-right">
+                              <select class="fleft d-enter" name="loai-dich-vu">
+                                <option value="chup-cat-lop">Chụp Cắt Lớp</option>
+                                <option value="sieu-am">siêu âm</option>
+                                <option value="chup-cong-huong">chụp Cộng hưởng từ</option>
+                              </select>
+                              <label class="fright">Chọn loại dịch vụ:</label>
+                              <div class="clear-fix"></div>
+                            </div>
+                            <div class="col22 col fleft">
+                              <select class="fright d-enter" name="phong">
+                                <option value="p1">phòng 1</option>
+                                <option value="p2">phòng 2</option>
+                                <option value="p3">phòng 3</option>
+                              </select>
+                              <label class="fright">Chọn phòng:</label>
+                              <div class="clear-fix"></div>
+                            </div>
+                            <div class="col22 col fleft">
+                              <select class="fright d-enter" name="status">
+                                <option value="Schedule">Schedule</option>
+                                <option value="arrival">arrival</option>
+                              </select>
+                              <label class="fright">status:</label>
+                              <div class="clear-fix"></div>
+                            </div>
+                            <div class="col22 col fleft">
+                              <div class="button">
+                                <button type="button">Lưu</button>
+                                <button type="button">Hủy</button>
+                                <div class="clear-fix">                  </div>
+                              </div>
+                            </div>
+                            <div class="clear-fix"></div>
+                          </div>
+                        </form>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="shadow bg">
+                    <td>Akram</td>
+                    <td>022</td>
+                    <td> </td>
+                    <td> 10/03/2018</td>
+                    <td> 2:30 PM</td>
+                    <td> 1234</td>
+                    <td>
+                       CT Chest<span>Abdomen Pelvis</span></td>
+                    <td>Schedule</td>
+                    <td></td>
+                    <td>
+                      <p><a class="btn-next fleft" href="javascript:void(0)"><i class="fas fa-forward"></i></a><a class="btn-dots fleft" href="javascript:void(0)"><i class="fas fa-ellipsis-h"></i></a>
+                        <div class="clear-fix"></div>
+                      </p>
+                      <!--Them myPopup-->
+                      <div class="myPopup popuptext">
+                        <ul>
+                          <li><a href="#">Đến phòng 1</a></li>
+                          <li><a href="#">Đến phòng 2</a></li>
+                        </ul>
+                      </div>
+                      <!--Them myPopup-->
+                    </td>
+                  </tr>
+                  <tr class="info">
+                    <td colspan="10">
+                      <div class="box">
+                        <form action="">
+                          <div class="row">
+                            <div class="col33 col fleft text-right">
+                              <select class="fleft d-enter" name="loai-dich-vu">
+                                <option value="chup-cat-lop">Chụp Cắt Lớp</option>
+                                <option value="sieu-am">siêu âm</option>
+                                <option value="chup-cong-huong">chụp Cộng hưởng từ</option>
+                              </select>
+                              <label class="fright">Chọn loại dịch vụ:</label>
+                              <div class="clear-fix"></div>
+                            </div>
+                            <div class="col22 col fleft">
+                              <select class="fright d-enter" name="phong">
+                                <option value="p1">phòng 1</option>
+                                <option value="p2">phòng 2</option>
+                                <option value="p3">phòng 3</option>
+                              </select>
+                              <label class="fright">Chọn phòng:</label>
+                              <div class="clear-fix"></div>
+                            </div>
+                            <div class="col22 col fleft">
+                              <select class="fright d-enter" name="status">
+                                <option value="Schedule">Schedule</option>
+                                <option value="arrival">arrival</option>
+                              </select>
+                              <label class="fright">status:</label>
+                              <div class="clear-fix"></div>
+                            </div>
+                            <div class="col22 col fleft">
+                              <div class="button">
+                                <button type="button">Lưu</button>
+                                <button type="button">Hủy</button>
+                                <div class="clear-fix">                  </div>
+                              </div>
+                            </div>
+                            <div class="clear-fix"></div>
+                          </div>
+                        </form>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="shadow bg">
+                    <td>Akram</td>
+                    <td>022</td>
+                    <td> </td>
+                    <td> 10/03/2018</td>
+                    <td> 2:30 PM</td>
+                    <td> 1234</td>
+                    <td>
+                       CT Chest<span>Abdomen Pelvis</span></td>
+                    <td>Schedule</td>
+                    <td></td>
+                    <td>
+                      <p><a class="btn-next fleft" href="javascript:void(0)"><i class="fas fa-forward"></i></a><a class="btn-dots fleft" href="javascript:void(0)"><i class="fas fa-ellipsis-h"></i></a>
+                        <div class="clear-fix"></div>
+                      </p>
+                      <!--Them myPopup-->
+                      <div class="myPopup popuptext">
+                        <ul>
+                          <li><a href="#">Đến phòng 1</a></li>
+                          <li><a href="#">Đến phòng 2</a></li>
+                        </ul>
+                      </div>
+                      <!--Them myPopup-->
+                    </td>
+                  </tr>
+                  <tr class="info">
+                    <td colspan="10">
+                      <div class="box">
+                        <form action="">
+                          <div class="row">
+                            <div class="col33 col fleft text-right">
+                              <select class="fleft d-enter" name="loai-dich-vu">
+                                <option value="chup-cat-lop">Chụp Cắt Lớp</option>
+                                <option value="sieu-am">siêu âm</option>
+                                <option value="chup-cong-huong">chụp Cộng hưởng từ</option>
+                              </select>
+                              <label class="fright">Chọn loại dịch vụ:</label>
+                              <div class="clear-fix"></div>
+                            </div>
+                            <div class="col22 col fleft">
+                              <select class="fright d-enter" name="phong">
+                                <option value="p1">phòng 1</option>
+                                <option value="p2">phòng 2</option>
+                                <option value="p3">phòng 3</option>
+                              </select>
+                              <label class="fright">Chọn phòng:</label>
+                              <div class="clear-fix"></div>
+                            </div>
+                            <div class="col22 col fleft">
+                              <select class="fright d-enter" name="status">
+                                <option value="Schedule">Schedule</option>
+                                <option value="arrival">arrival</option>
+                              </select>
+                              <label class="fright">status:</label>
+                              <div class="clear-fix"></div>
+                            </div>
+                            <div class="col22 col fleft">
+                              <div class="button">
+                                <button type="button">Lưu</button>
+                                <button type="button">Hủy</button>
+                                <div class="clear-fix">                  </div>
+                              </div>
+                            </div>
+                            <div class="clear-fix"></div>
+                          </div>
+                        </form>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="shadow bg">
+                    <td>Akram</td>
+                    <td>022</td>
+                    <td> </td>
+                    <td> 10/03/2018</td>
+                    <td> 2:30 PM</td>
+                    <td> 1234</td>
+                    <td>
+                       CT Chest<span>Abdomen Pelvis</span></td>
+                    <td>Schedule</td>
+                    <td></td>
+                    <td>
+                      <p><a class="btn-next fleft" href="javascript:void(0)"><i class="fas fa-forward"></i></a><a class="btn-dots fleft" href="javascript:void(0)"><i class="fas fa-ellipsis-h"></i></a>
+                        <div class="clear-fix"></div>
+                      </p>
+                      <!--Them myPopup-->
+                      <div class="myPopup popuptext">
+                        <ul>
+                          <li><a href="#">Đến phòng 1</a></li>
+                          <li><a href="#">Đến phòng 2</a></li>
+                        </ul>
+                      </div>
+                      <!--Them myPopup-->
+                    </td>
+                  </tr>
+                  <tr class="info">
+                    <td colspan="10">
+                      <div class="box">
+                        <form action="">
+                          <div class="row">
+                            <div class="col33 col fleft text-right">
+                              <select class="fleft d-enter" name="loai-dich-vu">
+                                <option value="chup-cat-lop">Chụp Cắt Lớp</option>
+                                <option value="sieu-am">siêu âm</option>
+                                <option value="chup-cong-huong">chụp Cộng hưởng từ</option>
+                              </select>
+                              <label class="fright">Chọn loại dịch vụ:</label>
+                              <div class="clear-fix"></div>
+                            </div>
+                            <div class="col22 col fleft">
+                              <select class="fright d-enter" name="phong">
+                                <option value="p1">phòng 1</option>
+                                <option value="p2">phòng 2</option>
+                                <option value="p3">phòng 3</option>
+                              </select>
+                              <label class="fright">Chọn phòng:</label>
+                              <div class="clear-fix"></div>
+                            </div>
+                            <div class="col22 col fleft">
+                              <select class="fright d-enter" name="status">
+                                <option value="Schedule">Schedule</option>
+                                <option value="arrival">arrival</option>
+                              </select>
+                              <label class="fright">status:</label>
+                              <div class="clear-fix"></div>
+                            </div>
+                            <div class="col22 col fleft">
+                              <div class="button">
+                                <button type="button">Lưu</button>
+                                <button type="button">Hủy</button>
+                                <div class="clear-fix">                  </div>
+                              </div>
+                            </div>
+                            <div class="clear-fix"></div>
+                          </div>
+                        </form>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="myPopup popuptext">
+                <ul>
+                  <li><a href="#">Đến phòng 1</a></li>
+                  <li><a href="#">Đến phòng 2</a></li>
+                </ul>
+              </div>
+              <div class="footer">
+                <ul class="list-inline fleft">
+                  <li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+                  <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+                </ul>
+                <p class="fright">Trang: 1</p>
+                <div class="clear-fix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="crt-order" id="crt-order">
+        <div class="container">
+          <div class="crt-order__wrap">
+            <div class="title">
+              <h1>create new order</h1>
+            </div>
+            <div class="content">
+              <form action="">
+                <div class="form-wrap">
+                  <div class="row">
+                    <div class="col50">
+                      <div class="col50-box">
+                        <div class="input">
+                          <label>Patient Id</label>
+                          <input type="text" name="id" id="id"/>
+                        </div>
+                        <div class="input">
+                          <label>Patient Name</label>
+                          <input type="text" name="name" id="name"/>
+                        </div>
+                        <div class="input w50 fleft">
+                          <label>Birthday</label>
+                          <input class="today" type="date" name="birth"/>
+                        </div>
+                        <div class="input w50 fright">
+                          <label class="mr-left">Giới Tính</label>
+                          <select class="d-enter mr-left" name="gt">
+                            <option value="hide" disabled="disabled" selected="selected">Chọn giới tính</option>
+                            <option value="nam">Nam</option>
+                            <option value="nu">Nữ</option>
+                            <option value="khac">Giới tính khác</option>
+                          </select>
+                        </div>
+                        <div class="clear-fix"></div>
+                        <div class="input">
+                          <label>Address</label>
+                          <input type="text" name="add" id="add"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col50">
+                      <div class="col50-box">
+                        <div class="input">
+                          <label>Bác sĩ khám</label>
+                          <input type="text" name=""/>
+                        </div>
+                        <div class="input">
+                          <label>Lý do khám</label>
+                          <input type="text" name=""/>
+                        </div>
+                        <div class="input">
+                          <label>Tên khoa</label>
+                          <input type="text" name=""/>
+                        </div>
+                        <div class="input">
+                          <label>Imaging Service</label>
+                          <select class="enter" name="image">
+                            <option value="img1">img1</option>
+                            <option value="img2">img2</option>
+                            <option value="img3">img3                      </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clear-fix"></div>
+                  </div>
+                </div>
+                <div class="form-btn">
+                  <button type="button">create new order</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer"></footer>
+      <!--#footer-->
+    </div>
+    <!--#wrapper-->
+    <!--JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.8.5/js/standalone/selectize.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
