@@ -119,6 +119,16 @@ td
         Tìm kiếm
     </button>   
 </div>
+{{-- <div class="col-md-2">
+    <a href="{{ route('export_excel.excel') }}" class="btn btn-primary">
+        xuất excel
+    </a>
+</div> --}}
+ <div class="col-md-2">
+    <a href="{{ route('export') }}" class="btn btn-primary">
+        xuất excel
+    </a>
+</div>
 </form>
 <br>
 <br>

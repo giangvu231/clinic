@@ -124,6 +124,11 @@
 	{
 		display: table-cell;
 	}
+	table tr th
+	{
+		text-align: center;
+		font-size: 14px;
+	}
 	.t_head
 	{
 		margin-top: 30px;
@@ -144,11 +149,7 @@
 		color: #fff;
 		background-color: #00BD9C;
 	}
-	table tr th
-	{
-		text-align: center;
-		font-size: 14px;
-	}
+	
 	.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover 
 	{
 		background-color: #00BD9C;

@@ -29,6 +29,7 @@ class UserController extends Controller
         }
         $users = $users->paginate(20);
         return view('admin.user.index', compact("users"));
+        
     }
 
     /**
@@ -185,15 +186,26 @@ class UserController extends Controller
     public function postChamCong(Request $request)
     {
         $ten_nv             = $request->input('ten_nv');
-        $ngay_cham             = $request->input('ngay_cham');
-        $so_cong             = $request->input('so_cong');   
+        $ma_nv              = $request->input('ma_nv');
+        $ngay_cham          = $request->input('ngay_cham');
+        $so_cong            = $request->input('so_cong');   
         $data = array(
             'ten_nv'            => $ten_nv,
+            'ma_nv'            => $ma_nv,
             'ngay_cham'            => $ngay_cham,
-            'so_cong' => $so_cong
+            'so_cong' => $so_cong,
+            'created_at' => date('Y-m-d H:i:s')
         );
         DB::table("chamcong")->insert($data);
     
         return back();
+    }
+    public function getChamCong(Request $request)
+    {   
+        // $a = date("d", strtotime("2011-01-07"));
+        // echo $a;
+        $users = User::where('id', '<>', Auth::id());
+        $users = $users->paginate(100);
+        return view('admin.user.ChamCong', compact("users"));
     }
 }

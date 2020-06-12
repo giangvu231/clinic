@@ -8,7 +8,8 @@ use Validator;
 use Response;
 use Carbon\Carbon;
 use DB;
-
+use Excel;
+use App\Exports\SupExport;
 
 class SuppliesController extends Controller
 {
@@ -342,6 +343,47 @@ class SuppliesController extends Controller
         $supplies = Supplies::findOrfail($id);
         $supplies->delete();    
         return back();
+    }
+
+    public function export()
+    {       
+        // // $supplies_data = DB::table('supplies')->get()->toArray();
+        // // $supplies_array[] = array(
+        // //     'ma_thuoc',
+        // //     'ten_thuoc',
+        // //     'nha_cung_cap',
+        // //     'so_luong',
+        // //     'con_lai'
+        // // );       
+        // // foreach ($supplies_data as $supplies) {
+        // //     $supplies_array[] = array(
+        // //     'ma_thuoc' => $supplies->ma_thuoc,
+        // //     'ten_thuoc' => $supplies->ten_thuoc,
+        // //     'nha_cung_cap' => $supplies->nha_cung_cap,
+        // //     'so_luong' => $supplies->so_luong,
+        // //     'con_lai' => $supplies->con_lai
+        // //     );
+        // // }
+        $a = Supplies::all();
+
+        return Excel::download($a, 'test.xlsx');
+
+        // // Excel::store('supplies data', function($excel) use ($supplies_array) 
+        // // {
+        // //     $excel->setTitle('supplies data');
+        // //     $excel->sheet('supplies data', function($sheet) use ($supplies_array){
+        // //         $sheet->fromArray($supplies_array, null, 'A1', false, false);
+        // //     });
+        // // })->download('xls');
+
+        // // Excel::download('Pdf Data', function($excel) use ($supplies_array){
+        // //     $excel->setTitle('Pdf Data');
+        // //     $excel->sheet('Pdf Data', function($sheet) use ($supplies_array){
+        // //         $sheet->fromArray($supplies_array, null, 'A1', false, false);
+        // //     });
+        // // }
+        // return Excel::download(new exportEX, 'Pdf Data.xlsx');
+        // //return Excel::download($supplies_array, 'test.xlsx');
     }
     
 

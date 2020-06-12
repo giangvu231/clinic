@@ -93,20 +93,23 @@ Route::group(['prefix' => 'radiologist','middleware' => 'checklogin'], function(
 
     //chấm công
     Route::post('','UserController@postChamCong')->name('post_cham_cong');
+    //xuất excel
+    Route::get('export', 'SuppliesController@export')->name('export');
 
 Route::group(['prefix' => 'admin','middleware' => ['checklogin', 'admin'] ], function() {
     Route::get('/', 'AdminController@index')->name('admin.index'); 
     Route::resource('template', 'TemplateController', ['as' => 'admin']);  
     Route::resource('supplies', 'SuppliesController', ['as' => 'admin']);  
     Route::group(['prefix' => 'settings'], function(){
-    Route::resource('url2', 'SettingsController', ['as' => 'admin.settings'])->only(['index', 'update']);
+        Route::resource('url2', 'SettingsController', ['as' => 'admin.settings'])->only(['index', 'update']);
     });
     Route::get('/statics','MedicalBillController@index')->name('get.statics.index');
     Route::post('/revert-status', 'MedicalBillController@postRevertStatus')->name('post.admin.revert_status');
 	Route::get('/set-permission', "Admincontroller@getSetPermission")->name('admin.user.permission');
     Route::post('/change-permission', "Admincontroller@postChangePermission")->name('admin.change.permission');
-	Route::resource('user', 'UserController', ['as' => 'admin']);   
-
+	Route::resource('user', 'UserController', ['as' => 'admin']);
+    //get chấm công   
+    Route::get('ChamCong', 'UserController@getChamCong')->name('getChamCong');
 });
 
 Route::get("addmore","ProductAddMoreController@addMore")->name('addMore');

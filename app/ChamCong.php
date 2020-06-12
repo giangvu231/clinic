@@ -10,6 +10,7 @@ class ChamCong extends Model
     
     public $fillable = [
         'ten_nv',
+        'ma_nv',
     	'ngay_cham',
     	'so_cong'
     ];

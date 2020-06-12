@@ -106,6 +106,9 @@
                                         class="fa fa-circle-o"></i>Danh sách nhân viên</a></li>
                         <li class="{{ Route::currentRouteNamed('admin.user.create') ? 'active' : '' }}"><a href="{{route('admin.user.create')}}"><i
                                         class="fa fa-circle-o"></i>Thêm nhân viên</a></li>
+                        <li class="">
+                            <a href="{{ Route('getChamCong')}}"><i class="fa fa-circle-o"></i>Bảng thống kê chấm công</a>
+                        </li>
 
 						<!-- {{-- <li class="{{ Route::currentRouteNamed('admin.user.permission') ? 'active' : '' }}"><a href="{{route('admin.user.permission')}}"><i
                                         class="fa fa-circle-o"></i>Phân quyền tài khoản</a></li> --}} -->

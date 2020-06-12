@@ -121,15 +121,31 @@
                                                         <input readonly type="text" name="ten_nv" value="{{$user->hoten}}">
                                                     </b>
                                                 </div> 
+                                                <div hidden="" class="col-md-5">
+                                                    <b>Mã nhân viên</b>  
+                                                    <b>
+                                                        <input readonly type="text" name="ma_nv" value="{{$user->userid}}">
+                                                    </b>
+                                                </div>
                                                 <div class="col-md-5">
                                                     <b>Chức vụ :</b>  
                                                     <b>
-                                                        <input readonly type="text" name="ten_nv" value="{{$user->level->name}}">
+                                                        <input readonly type="text" value="{{$user->level->name}}">
                                                     </b>
-                                                </div> 
+                                                </div>                                                 
                                                 <br>
                                                 <br>                                                 
                                                 <div>
+                                                    <!-- <div class="col-md-5">
+                                                    <b>Mức lương :</b>  
+                                                    <b>
+                                                        @if ($user->level->id == 4)
+                                                        <input readonly type="text" name="muc_luong" value="300000">
+                                                        @elseif ($user->level->id == 3)
+                                                        <input readonly type="text" name="muc_luong" value="200000">
+                                                        @endif
+                                                    </b>
+                                                    </div>  -->
                                                     <div class="col-md-2">
                                                         <b>Chọn thời gian : </b>                                                       
                                                     </div>
@@ -142,7 +158,7 @@
                                                 </div>                                               
                                             </div>                                            
                                             <div class="row text-right">
-                                                <button class="btn btn-primary" type="submit" style="margin-top: 0px;">Lưu lại</button>
+                                                <button class="btn btn-primary" type="submit" style="margin-top: 0px;">Chấm công</button>
                                                 <button class="btn btn-primary clear" style="margin-top: 0px;">Hủy bỏ</button>
                                             </div>
                                         </form>
@@ -199,6 +215,7 @@
   
     </div>
 </div>
+
 @endsection
 
 @push('scripts')
