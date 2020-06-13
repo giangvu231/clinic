@@ -78,64 +78,79 @@ class ProductAddMoreController extends Controller
         $qty  = $request->input('qty');
         $don_vi  = $request->input('don_vi'); 
         $lieu_dung  = $request->input('lieu_dung');
-        DB::table("product_stocks")->insert([
-            'name'            => $name,
-            'qty'             => $qty,
-            'don_vi'          => $don_vi,
-            'lieu_dung'       => $lieu_dung,
-            'supplies_id'     => $supplies_id,
-            'medical_bill_id' => $accession_number,
-            'posts_id' => $accession_number.$supplies_id,
-        ]);
-        $lo_max = DB::table('supplies')->where('ma_thuoc', $supplies_id)->max('so_lo');
-        $lo_min = DB::table('supplies')->where('ma_thuoc', $supplies_id)->min('so_lo');
-        for ($i = $lo_min; $i <= $lo_max ; $i++) {
-            $con_lai = DB::table('supplies')->where('ma_thuoc', $supplies_id)->where('so_lo', $i)->sum('con_lai');
-            $a = DB::table('supplies')->where('so_lo','<=', $i)->where('ma_thuoc',$supplies_id)->sum('con_lai');
-            if ($qty > $a) {
-                $gb_i_1 = DB::table('supplies')->where('ma_thuoc', $supplies_id)->where('so_lo', $i)->sum('gia_ban');
-                $gn_i_1 = DB::table('supplies')->where('ma_thuoc', $supplies_id)->where('so_lo', $i)->sum('gia_nhap');
-                $he_so = $gb_i_1 -$gn_i_1;
-                if ($con_lai != 0) {
-                    DB::table("posts")->insert([
-                        'so_lo'           => $i,
-                        'so_luong_chi_tiet'        => $con_lai,
-                        'gia_thanh'       => $gb_i_1,
-                        'tien_lai'       => $he_so*$con_lai,
-                        'thanh_toan'       => $gb_i_1*$con_lai,
-                        'ProductStocks_id'=> $accession_number.$supplies_id,  
-                        'created_at' => date('Y-m-d H:i:s'),  
-                    ]);      
-                }
-                  
-            }else{
-                $con_lai_first = DB::table('supplies')->where('ma_thuoc', $supplies_id)->where('so_lo', $i)->sum('con_lai');
-                $gb_i = DB::table('supplies')->where('ma_thuoc', $supplies_id)->where('so_lo', $i)->sum('gia_ban');
-                $gn_i = DB::table('supplies')->where('ma_thuoc', $supplies_id)->where('so_lo', $i)->sum('gia_nhap');
-                $he_so2 = $gb_i - $gn_i;
-                $con_lai1 = $a - $qty;
-                $con_lai2 = $con_lai_first - $con_lai1;
-                DB::table('supplies')->where('ma_thuoc', $supplies_id)->where('so_lo', $i)->update(['con_lai' => $con_lai1]);
-                DB::table('supplies')->where('ma_thuoc', $supplies_id)->where('so_lo', '<', $i)->update(['con_lai' => '0','trang_thai' => '0']);
-                if ($con_lai_first != 0) {
-                    DB::table("posts")->insert([                    
-                        'so_lo'           => $i,
-                        'so_luong_chi_tiet'        => $con_lai2,
-                        'gia_thanh'       => $gb_i,
-                        'tien_lai'       => $he_so2*$con_lai2,
-                        'thanh_toan'       => $gb_i*$con_lai2,
-                        'ProductStocks_id'=> $accession_number.$supplies_id,
-                        'created_at' => date('Y-m-d H:i:s'), 
-                    ]);   
-                }      
-               
-                break;
-            }            
-        }
-        
-        
-        DB::table('supplies')->where('con_lai', '0')->update(['trang_thai' => '0']);
+
+        if (empty($supplies_id)) {
+            DB::table("product_stocks")->insert([
+                'name'            => $name,
+                'qty'             => $qty,
+                'don_vi'          => $don_vi,
+                'lieu_dung'       => $lieu_dung,
+                'supplies_id'     => $supplies_id,
+                'medical_bill_id' => $accession_number,
+                'posts_id' => $accession_number.$supplies_id,
+            ]);
+        }else{
+            DB::table("product_stocks")->insert([
+                'name'            => $name,
+                'qty'             => $qty,
+                'don_vi'          => $don_vi,
+                'lieu_dung'       => $lieu_dung,
+                'supplies_id'     => $supplies_id,
+                'medical_bill_id' => $accession_number,
+                'posts_id' => $accession_number.$supplies_id,
+            ]);
+            $lo_max = DB::table('supplies')->where('ma_thuoc', $supplies_id)->max('so_lo');
+            $lo_min = DB::table('supplies')->where('ma_thuoc', $supplies_id)->min('so_lo');
+            for ($i = $lo_min; $i <= $lo_max ; $i++) {
+                $con_lai = DB::table('supplies')->where('ma_thuoc', $supplies_id)->where('so_lo', $i)->sum('con_lai');
+                $a = DB::table('supplies')->where('so_lo','<=', $i)->where('ma_thuoc',$supplies_id)->sum('con_lai');
+                if ($qty > $a) {
+                    $gb_i_1 = DB::table('supplies')->where('ma_thuoc', $supplies_id)->where('so_lo', $i)->sum('gia_ban');
+                    $gn_i_1 = DB::table('supplies')->where('ma_thuoc', $supplies_id)->where('so_lo', $i)->sum('gia_nhap');
+                    $he_so = $gb_i_1 -$gn_i_1;
+                    if ($con_lai != 0) {
+                        DB::table("posts")->insert([
+                            'so_lo'           => $i,
+                            'so_luong_chi_tiet'        => $con_lai,
+                            'gia_thanh'       => $gb_i_1,
+                            'tien_lai'       => $he_so*$con_lai,
+                            'thanh_toan'       => $gb_i_1*$con_lai,
+                            'ProductStocks_id'=> $accession_number.$supplies_id,  
+                            'created_at' => date('Y-m-d H:i:s'),  
+                        ]);      
+                    }
+
+                }else{
+                    $con_lai_first = DB::table('supplies')->where('ma_thuoc', $supplies_id)->where('so_lo', $i)->sum('con_lai');
+                    $gb_i = DB::table('supplies')->where('ma_thuoc', $supplies_id)->where('so_lo', $i)->sum('gia_ban');
+                    $gn_i = DB::table('supplies')->where('ma_thuoc', $supplies_id)->where('so_lo', $i)->sum('gia_nhap');
+                    $he_so2 = $gb_i - $gn_i;
+                    $con_lai1 = $a - $qty;
+                    $con_lai2 = $con_lai_first - $con_lai1;
+                    DB::table('supplies')->where('ma_thuoc', $supplies_id)->where('so_lo', $i)->update(['con_lai' => $con_lai1]);
+                    DB::table('supplies')->where('ma_thuoc', $supplies_id)->where('so_lo', '<', $i)->update(['con_lai' => '0','trang_thai' => '0']);
+                    if ($con_lai_first != 0) {
+                        DB::table("posts")->insert([                    
+                            'so_lo'           => $i,
+                            'so_luong_chi_tiet'        => $con_lai2,
+                            'gia_thanh'       => $gb_i,
+                            'tien_lai'       => $he_so2*$con_lai2,
+                            'thanh_toan'       => $gb_i*$con_lai2,
+                            'ProductStocks_id'=> $accession_number.$supplies_id,
+                            'created_at' => date('Y-m-d H:i:s'), 
+                        ]);   
+                    }      
+
+                    break;
+                }            
+            }
+
+
+            DB::table('supplies')->where('con_lai', '0')->update(['trang_thai' => '0']);
+
+        }  
         return back()->with('success', 'Thêm đơn thuốc thành công.');
+        //return back();
     }
 
 }
