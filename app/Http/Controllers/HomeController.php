@@ -14,6 +14,7 @@ use Storage;
 use Orchestra\Parser\Xml\Facade as XmlParser;
 use App\MedicalBill;
 use Exception;
+use DB;
 
 
 class HomeController extends Controller
@@ -52,8 +53,14 @@ class HomeController extends Controller
 
             if (Auth::attempt(['userid' => $request->name, 'password' => $request->password], $remember)) {
 				if(Auth::user()->isAdmin()){
+
 					return redirect()->route('admin.index');
 				}else{
+                    DB::table("chamcong")->insert([
+                        'ma_nv' => $request->name,
+                        'ngay_cham' => date('Y-m-d H:i:s'),
+                    ]);
+                    //DB::table("users")->where('userid',$request->name)->update(['test' => date('Y-m-d H:i:s')]);
 					return redirect()->route('get.exams.view');
 				}
             } else {
@@ -116,8 +123,15 @@ class HomeController extends Controller
         }
     }
 
-    public function getLogout()
-    {
+    public function getLogout(Request $request)
+    {      
+       // $a = $request->name;
+       // echo $a;
+        // DB::table("chamcong")->insert([
+        //                 'ma_nv' => $request->name,
+        //                 'ngay_cham' => date('Y-m-d H:i:s'),
+        //                 'so_cong' => `logout`,
+        //             ]);
         Auth::logout();
         session()->flash('message', 'Đăng xuất thành công');
         return redirect()->route('get.login');

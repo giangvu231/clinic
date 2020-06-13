@@ -16,6 +16,7 @@ class CreateTableChamCongTable extends Migration
         Schema::create('ChamCong', function (Blueprint $table) {
             $table->increments('id');
             $table->string('ten_nv')->nullable();
+            $table->string('ma_nv')->nullable();
             $table->date('ngay_cham')->nullable();
             $table->string('so_cong')->nullable();
             $table->timestamps();
