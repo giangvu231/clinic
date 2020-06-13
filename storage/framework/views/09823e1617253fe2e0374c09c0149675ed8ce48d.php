@@ -1,0 +1,1 @@
+<a href="<?php echo e(route('get.kedon.view')); ?>">adsadas</a>
